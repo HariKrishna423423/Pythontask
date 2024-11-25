@@ -94,3 +94,14 @@ print(p3)
 
 p4 = krishna.replace("krishna","      ")    # remove word and add spacess
 print(p4)
+
+
+
+
+s= "welcome to world of python"
+print(len(s))
+ss = s.split()
+print(len(ss))
+print(ss)
+
+
