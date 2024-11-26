@@ -122,10 +122,8 @@ print(char12.islower())
 
 #istitle():
 text8 = "hello world"
-result = text8.title()
-print(result)
+print(text8.istitle())
 
-#iscapitalize():
-text9 = "pYTHON"
-result = text9.capitalize()
-print(result)
+
+text9 = "Hello World"
+print(text9.istitle())
