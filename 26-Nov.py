@@ -55,13 +55,9 @@ print(k)
 
 n = str(input("Enter a string7: "))
 
-n = n.replace('a', 'A') 
-n = n.replace('e', 'E') 
-n = n.replace('i', 'I') 
-n = n.replace('o', 'O') 
-n = n.replace('u', 'U')
+k = n.replace('a', 'A').replace('e', 'E').replace('i', 'I').replace('o', 'O').replace('u', 'U')
 
-print(n) 
+print(k) 
 
 # 8)Python program to separate characters in a given string
  
@@ -115,14 +111,9 @@ x= "123456"
 print(x.isdigit()) 
 # 15)Python program to delete vowels in a given string
 
-n = str (input("Enter the string15 :"))
-vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-k = ''
-
-for char in n:
-  if char not in vowels:
-      k = k+char
-print(k)
+n= str(input("enter a string15 :"))
+vowels = n.replace('a','').replace('A','').replace('e','').replace('E','').replace('i','').replace('I','').replace('o','').replace('O','').replace('u','').replace('U','')
+print(vowels)
 
 # 16)Python program to count the Occurrence Of Vowels & Consonants in a String
 
@@ -136,24 +127,19 @@ print (count1)
 
 # 17)Python program to print the highest frequency character in a String
 
-def highest_frequency_char(input_string):
-    frequency = {}
-
-    for char in input_string:
-        if char in frequency:
-            frequency[char] += 1
+s = str(input("enter a char :"))
+print(s.count("n"))
+d = {}
+for char in s:
+    if char in d:
+        d[char] += 1
     else:
-            frequency[char] = 1
-
-    max_freq_char = max(frequency, key=frequency.get)
-    max_freq = frequency[max_freq_char]
-
-    return max_freq_char, max_freq
-
-input_string = input("Enter a string17: ")
-char, freq = highest_frequency_char(input_string)
-print(f"The highest frequency character is '{char}' with {freq} occurrences.")
-
+        d[char] =1
+print(max(d.values()))
+print(max(d, key=d.get))
+hfe = max(d, key=d.get)
+r = {hfe:d[hfe]}
+print(r)
 
 # 18)Python program to Replace First Occurrence Of Vowel With ‘-‘ in String
 
@@ -166,22 +152,22 @@ for i in n1:
 print(n1)
 
 # 19)Python program to count alphabets, digits and special characters 
-def count_characters(input_string):
-    alphabets = digits = special_characters = 0
-    for char in input_string:
-        if char.isalpha():
-            alphabets += 1
-        elif char.isdigit():
-            digits += 1
-        else:
-            special_characters += 1
+s = str(input("Enter a string19 :"))
+dig = 0
+chrc = 0
+spch =0
+for char in s :
+    if char.isalpha() :
+        chrc = chrc+1
+    elif char.isdigit() :
+        dig = dig+1
+    else :
+        spch = spch +1
+ 
+print("charectors- ", chrc)
+print("digits -", dig)
+print("specialsymbals - ", spch)
 
-    return alphabets, digits, special_characters
-input_string = input("Enter a string19 :")
-alphabets, digits, special_characters = count_characters(input_string)
-print(f"Alphabets: {alphabets}")
-print(f"Digits: {digits}")
-print(f"Special Characters: {special_characters}")
 # 20)Python program to check given character is digit or not using isdigit() method 
 
 n1 = input("Enter a character2: ")
@@ -192,13 +178,13 @@ else:
     print(" n1 is not a digit ")
 # 21)Python program to calculate sum of integers in string 
 n1 = input("Enter a string21: ")
-sum1 = 0
-for i in n1:
-    
-    if ord(i) >= 48 and ord(i) <= 57:
-
-        sum1 = sum1 + int(i)
-print('Sum is :' + str(sum1))
+count = 0
+for char in n1:
+    if char.isdigit():
+        count = count + int(char)
+    else :
+        pass
+print(count)
 
 # 22)Python program to print all non repeating character in string 
 s = str(input("Enter a string22 :"))
@@ -215,5 +201,8 @@ n2 = n1
 
 print(n1)
 print(n2)
+
+
+
 
 
