@@ -147,7 +147,7 @@ n1 = input("Enter the source string18: ")
 vowels ='aeiouAEIOU'
 for i in n1:
         if i in vowels:
-            n1 = n1.replace(i, '-', 1)  # Replace first occurrence of vowel
+            n1 = n1.replace(i, '-', 1) # Replace first occurrence of vowel
             break  # Exit the loop after replacing the first vowel
 print(n1)
 
@@ -172,10 +172,8 @@ print("specialsymbals - ", spch)
 
 n1 = input("Enter a character2: ")
 
-if (n1.isdigit()):
-    print(" n1 is a digit ")
-else:
-    print(" n1 is not a digit ")
+print(n1.isdigit())
+
 # 21)Python program to calculate sum of integers in string 
 n1 = input("Enter a string21: ")
 count = 0
