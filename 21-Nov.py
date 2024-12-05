@@ -103,5 +103,3 @@ print(len(s))
 ss = s.split()
 print(len(ss))
 print(ss)
-
-

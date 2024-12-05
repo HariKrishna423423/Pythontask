@@ -199,8 +199,3 @@ n2 = n1
 
 print(n1)
 print(n2)
-
-
-
-
-
